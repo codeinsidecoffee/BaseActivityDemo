@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/padding_30"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/nav_header_desc"
+        app:srcCompat="@drawable/ic_icon" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_10">
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textSize="@dimen/txt_size_16"
+            fontPath = "fonts/appbold.ttf"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nimesh@codeinsidecoffee.com"
+            android:textSize="@dimen/txt_size_12"
+            fontPath = "fonts/appsemibold.ttf"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:id="@+id/txt_change_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_14"
+            android:text="Change Password"
+            fontPath = "fonts/appsemibold.ttf"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/padding_10"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+</LinearLayout>

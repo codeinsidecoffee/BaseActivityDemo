@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/FullscreenTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/FullscreenTheme.PopupOverlay"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="false">
+                    <ImageView
+                        android:id="@+id/img_menuOption"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_menu"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_menuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Title Name"
+                    android:gravity="center"
+                    fontPath = "fonts/appbold.ttf"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    tools:ignore="MissingPrefix" />
+                <LinearLayout
+                    android:id="@+id/linear_cart"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/img_menu_add_cart"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_add_to_cart"
+                        android:backgroundTint="@color/white"
+                        android:foregroundTint="@color/white"
+                        android:layout_marginBottom="-5dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_card_value"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cart_text_bg"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:textSize="@dimen/txt_size_12"
+                    android:textAlignment="center"
+
+                    android:layout_above="@id/linear_cart"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="-18dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/img_menu_prac_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_practice_test"
+        tools:ignore="VectorDrawableCompat"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/white"
+        app:maxImageSize="58dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

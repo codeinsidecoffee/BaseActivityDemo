@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#191c51</color>
+    <color name="colorPrimaryDark">#191c51</color>
+    <color name="colorAccent">#9fc91b</color>
+    <color name="skyblue">#0099f4</color>
+    <color name="white">#ffffff</color>
+    <color name="drawer_menu_selector_color">#191c51</color>
+    <color name="black">#000</color>
+    <color name="lightblack">#41191C51</color>
+    <color name="orange">#FF5733</color>
+    <color name="maroon">#E12281</color>
+    <color name="transperentgray">#1E888888</color>
+
+
+</resources>
